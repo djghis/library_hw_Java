@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d43b36e8-506b-4a58-9330-e5b3d601a93c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LibraryTest.java" afterDir="false" />
     </list>
@@ -40,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.libraryStartEmpty">
+  <component name="RunManager" selected="JUnit.LibraryTest.canAddBook">
     <configuration name="BookTest.bookHasAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library_hw" />
       <option name="PACKAGE_NAME" value="" />
@@ -71,6 +70,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LibraryTest.canAddBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library_hw" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LibraryTest" />
+      <option name="METHOD_NAME" value="canAddBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LibraryTest.libraryStartEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library_hw" />
       <option name="PACKAGE_NAME" value="" />
@@ -83,6 +92,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.canAddBook" />
         <item itemvalue="JUnit.LibraryTest.libraryStartEmpty" />
         <item itemvalue="JUnit.BookTest.bookHasGenre" />
         <item itemvalue="JUnit.BookTest.bookHasAuthor" />
@@ -104,21 +114,21 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585084136378">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585084151957">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585084136378" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585084136376">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585084151957" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585084151955">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585084136376" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585084136375">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585084151955" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585084151954">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585084136375" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585084136377">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585084151954" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585084151956">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585084136377" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585084151956" />
   </component>
 </project>
