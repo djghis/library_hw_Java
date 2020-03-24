@@ -34,5 +34,25 @@ public class BorrowerTest {
         borrower.borrowBookFromLibrary(library);
         assertEquals(1, borrower.bookCount());
      }
+
+     @Test
+    public void canBorrow2Books(){
+        library.addbook(book1);
+        library.addbook(book2);
+        borrower.borrowBookFromLibrary(library);
+        borrower.borrowBookFromLibrary(library);
+        assertEquals(2, borrower.bookCount());
+     }
+
+     @Test
+     //Should fail!
+    public void cantBorrowMoreBooksThanOnShelves(){
+        library.addbook(book1);
+        library.addbook(book2);
+        borrower.borrowBookFromLibrary(library);
+        borrower.borrowBookFromLibrary(library);
+        borrower.borrowBookFromLibrary(library);
+        assertEquals(2, borrower.bookCount());
+     }
 }
 
