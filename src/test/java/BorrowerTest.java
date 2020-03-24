@@ -1,4 +1,7 @@
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class BorrowerTest {
 
@@ -18,4 +21,18 @@ public class BorrowerTest {
         book3 = new Book("Harry Potter 2", "JK Rowling", "Fantasy");
         book4 = new Book("Harry Potter 3", "JK Rowling", "Fantasy");
     }
+
+    @Test
+    public void booksStartEmpty(){
+        assertEquals(0, borrower.bookCount());
+    }
+
+    @Test
+    public void canBorrowBook(){
+        library.addbook(book1);
+        library.addbook(book2);
+        borrower.borrowBookFromLibrary(library);
+        assertEquals(1, borrower.bookCount());
+     }
 }
+

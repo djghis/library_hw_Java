@@ -7,8 +7,17 @@ public class Borrower {
     private String name;
 
     public Borrower(int cardNumber, String name){
-        this.borrowedBooks = ArrayList<Book>();
+        this.borrowedBooks = new ArrayList<Book>();
         this.cardNumber = cardNumber;
-        this.name = name
+        this.name = name;
+    }
+
+    public int bookCount() {
+        return borrowedBooks.size();
+    }
+
+    public void borrowBookFromLibrary(Library library) {
+        Book book = library.lendBook();
+        this.borrowedBooks.add(book);
     }
 }

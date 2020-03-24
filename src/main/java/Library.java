@@ -25,4 +25,8 @@ public class Library {
     public boolean hasSpace(){
        return this.capacity > bookCount();
     }
+
+    public Book lendBook(){
+        return this.bookCollection.remove(0);
+    }
 }
