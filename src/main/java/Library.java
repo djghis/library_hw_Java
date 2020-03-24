@@ -2,10 +2,12 @@ import java.util.ArrayList;
 
 public class Library {
 
+    private  Integer capacity;
     private ArrayList<Book> bookCollection;
 
-    public Library(){
+    public Library(Integer capacity){
         this.bookCollection = new ArrayList<Book>();
+        this.capacity = capacity;
     }
 
 
@@ -14,6 +16,13 @@ public class Library {
     }
 
     public void addbook(Book book) {
+    if (hasSpace()){
         this.bookCollection.add(book);
+    }
+
+    }
+
+    public boolean hasSpace(){
+       return this.capacity > bookCount();
     }
 }

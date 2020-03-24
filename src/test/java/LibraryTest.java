@@ -12,7 +12,7 @@ public class LibraryTest {
 
     @Before
     public void setUp(){
-        library = new Library();
+        library = new Library(100);
         book1 = new Book("Da Vinci Code", "Dan Brown", "Thriller");
         book2 = new Book("Harry Potter 1", "JK Rowling", "Fantasy");
         book3 = new Book("Harry Potter 2", "JK Rowling", "Fantasy");
@@ -28,5 +28,14 @@ public class LibraryTest {
     public void canAddBook(){
         library.addbook(book1);
         assertEquals(1, library.bookCount() );
+    }
+
+    @Test
+    public void libraryIsFull(){
+        Library verySmallLibrary = new Library(2);
+        verySmallLibrary.addbook(book1);
+        verySmallLibrary.addbook(book2);
+        verySmallLibrary.addbook(book3);
+        assertEquals(2, verySmallLibrary.bookCount());
     }
 }
